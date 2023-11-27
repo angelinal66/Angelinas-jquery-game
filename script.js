@@ -42,6 +42,8 @@ $(".gt").click(function(){
 $(".pft").click(function(){
     $(".pftp").show();
         $(".pftp").text("Passion fruit tea sounds awesome! Lets get started with a boiling kettle of water double click 'HEAT'");
+    $(".cup").hide();
+    $(".cup2").show();
          $(".gt").hide();
          $(".pft").hide();
          $(".tea").hide();
@@ -73,11 +75,11 @@ $(".wholep").click(function(){
      
     $(".pftp").hide();
     });
-$(".cup").dblclick(function(){
+$(".cup2").dblclick(function(){
      $(".ren").hide();
 
      $(".ren2").hide();
-    $(".cup").hide();
+    $(".cup2").hide();
     $(".cutp").hide();
     $(".boiling").hide();
     $(".teakettle2").hide();
@@ -85,6 +87,7 @@ $(".cup").dblclick(function(){
      $(".rna").hide();
    $(".woop2").show();
       $(".woop2").text("YUMMY all that work was worth it. Enjoy!! :)");
+     $("#resetpfgt").show();
 });
 $(".heat").dblclick(function(){
     $(".gtp").hide();
@@ -110,7 +113,7 @@ $(".boiling").click(function(){
         $(".finishgreenteap").show();
         $(".finishgreenteap").text("YAY! all we need to do is pour the tea double click the cup and enjoy!");
     });
-$(".teakettle").click(function(){
+$(".cup").click(function(){
     
        $(".teakettle").hide();
        $(".cup").hide();
@@ -118,6 +121,8 @@ $(".teakettle").click(function(){
     $(".finishgreenteap").hide();
     $(".donegtp").show();
     $(".donegtp").text("ENJOY!");
+    $("#resetgt").show();
+  
      });
     $(".rl").click(function(){
         $(".reg").text("Great! Now that we got some freshly squeezed lemon juice click the the juice to add to the glass!");
@@ -130,7 +135,7 @@ $(".teakettle").click(function(){
 });
 $(".sl").click(function(){
     $(".strawberrylemon").show();
-        $(".strawberrylemon").text("Great! Tap the image to add the strawberry and lemon juice mix to the cup!");
+        $(".strawberrylemon").text("Great! Tap the freshly squeezed juice to add everything in the cup cup!");
         $(".strawlemjuice").show();
          $(".rl").hide();
          $(".sl").hide();
@@ -150,6 +155,7 @@ $(".strawlemjuice").click(function() {
     $(".flav").hide();
     $(".go").hide();
     $(".lemjar").text("Looks like your finished!! I added a bit of water and sugar so you dont need to worry about that, enjoy! :).");
+     $("#resetstralemonade").show();
 });
 
 
@@ -172,12 +178,70 @@ $(".closedjar").dblclick(function() {
     $(".closedjar").hide();
      $(".lemjar").hide();
     $(".finalproductofregularlemonade").text("Looks great! Enjoy!!:) ");
+    $("#resetlemonade").show();
+});
+
+$("#resetlemonade").click(function() {
+     $(".finalpro").hide();
+     $(".finalproductofregularlemonade").hide();
+    $(".start").show();
+    $(".no").show();
+    $("#resetlemonade").hide();
+    $("body").css("background-image", "url(https://i.ytimg.com/vi/ht7b2bXgwpo/maxresdefault.jpg");
+});
+
+$("#resetstralemonade").click(function() {
+    $(".start").show();
+    $(".no").show();
+    $("#resetlemonade").hide();
+    $("body").css("background-image", "url(https://i.ytimg.com/vi/ht7b2bXgwpo/maxresdefault.jpg");
+    $(".finalproductofstrawlemon").hide();
+    $(".lemjar").hide();
+    $("#resetstralemonade").hide();
+});
+
+
+$(".no").click(function() {
+     $(".nope").show();
+ $(".nope").text("WOMP WOMP WOMPPP :c");
+    $(".sadrejection").show();
+       $("#resetno").show();
+});
+$("#resetgt").click(function() {
+    $(".finishprogt").hide();
+     $(".finalpro").hide();
+     $(".finalproductofregularlemonade").hide();
+    $(".start").show();
+    $(".donegtp").hide();
+    $(".no").show();
+    $("#resetgt").hide();
+    $("body").css("background-image", "url(https://i.ytimg.com/vi/ht7b2bXgwpo/maxresdefault.jpg");
+});
+$("#resetpfgt").click(function() {
+    $(".finishprogt").hide();
+     $(".finalpro").hide();
+     $(".finalproductofregularlemonade").hide();
+    $(".start").show();
+    $(".no").show();
+    $("#resetpfgt").hide();
+    $(".oneyear").hide();
+    $("body").css("background-image", "url(https://i.ytimg.com/vi/ht7b2bXgwpo/maxresdefault.jpg");
+     $(".woop2").hide();
+});
+$("#resetno").click(function() {
+    $(".finishprogt").hide();
+     $(".finalpro").hide();
+     $(".finalproductofregularlemonade").hide();
+    $(".start").show();
+    $(".no").show();
+   
+    $("body").css("background-image", "url(https://i.ytimg.com/vi/ht7b2bXgwpo/maxresdefault.jpg");
+     $(".woop2").hide();
+      $(".sadrejection").hide();
+    
+    $("#resetno").hide();
+       $(".nope").hide();
     
 });
 
 
-
-$(".no").click(function() {
-	$(".no").text("WOMP WOMP WOMP :C");
-    $(".sadrejection").show();
-});
